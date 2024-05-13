@@ -5,7 +5,6 @@ import About from './components/About';
 import Contact from './components/Contact'; 
 import NotFound from './components/NotFound'; 
 import CallButton from './components/CallButton'; 
-import WhatsAppButton from './components/WhatsAppButton'; 
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <CallButton />
-        <WhatsAppButton />
       </div>
     </Router>
   );
