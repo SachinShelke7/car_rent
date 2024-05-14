@@ -1,10 +1,12 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home'; 
-import About from './components/About'; 
-import Contact from './components/Contact'; 
-import NotFound from './components/NotFound'; 
-import CallButton from './components/CallButton'; 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
+import CallButton from "./components/CallButton";
+import Whyus from "./components/whyus";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           {/* Add a default route for unmatched paths */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Whyus />
+        <Footer />
         <CallButton />
       </div>
     </Router>

@@ -51,7 +51,7 @@ const Contact = () => {
               <h3 className="mb-4 text-2xl font-semibold">Contact Details</h3>
               <p className="mb-2 text-lg"><span className="font-semibold text-gray-800">Address:</span> 123 Main Street, Pune, India</p>
               <p className="mb-2 text-lg"><span className="font-semibold text-gray-800">Email:</span> pankajrajule@gmail.com</p>
-              <p className="mb-2 text-lg"><span className="font-semibold text-gray-800">Phone:</span> +91 1234567890</p>
+              <p className="mb-2 text-lg"><span className="font-semibold text-gray-800">Phone:</span> +91 9561526177</p>
             </div>
             {/* Enquiry card */}
             <div className="bg-white rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:scale-[1.01] m-2">
