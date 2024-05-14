@@ -51,7 +51,9 @@ const Navbar = () => {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
+            <Link to="/">
               <img src={logo} alt="logo" width="90%" className="pt-4" />
+              </Link>
             </div>
             <div className="flex items-center">
               <button
@@ -81,7 +83,7 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed inset-0 overflow-hidden z-50 transition-all duration-700 ${
+        className={`fixed inset-0 overflow-hidden z-50 transition-all duration-700  ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -112,7 +114,14 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
+
           <div className="px-4 py-8">
+            <img
+              src={logo}
+              alt="logo"
+              width="90%"
+              className="w-full pt-4 pb-2 bg-gray-600 rounded-lg"
+            />
             <ul>
               <li>
                 <Link
@@ -142,6 +151,12 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="fixed flex space-x-4 bottom-10 left-16">
+            <h2 className="font-bold md:text-xl">Call Us</h2>
+            <a href="tel:+919561526177" className="font-bold md:text-xl">
+              +919561526177
+            </a>
           </div>
         </div>
       </div>
